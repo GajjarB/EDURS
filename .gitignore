@@ -1,0 +1,37 @@
+# Runtime secrets — NEVER commit these
+.vault
+.env
+.attempts
+
+# Runtime logs
+bot_execution.log
+*.log
+
+# CV / personal documents — user must add their own
+*.pdf
+
+# Dependencies — install via npm install
+node_modules/
+package-lock.json
+
+# Temp bytecode files created at runtime
+*.tmp.jsc
+*.obf.tmp.js
+.*.jsc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Excel output files
+*.xlsx
+*.xls
+
+# Scraped job data (runtime)
+jobs_raw.json
+jobs_filtered.json
+jobs_scored.json
+jobs_tracked.json
+outreach_log.json
+company_research.json

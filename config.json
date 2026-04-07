@@ -1,0 +1,182 @@
+{
+  "candidate_name": "Your Full Name",
+  "candidate_phone": "+00 000 00000000",
+  "candidate_email": "your.email@example.com",
+  "candidate_email_notify": "notify.email@example.com",
+  "candidate_linkedin": "linkedin.com/in/your-profile",
+  "candidate_location": "City, Country",
+  "candidate_address": "Street, City, Country",
+  "cv_path": "YourName_CV.pdf",
+
+  "experience_summary": "Brief summary of your experience, skills, and background. 2-3 sentences.",
+
+  "skills": "Skill1, Skill2, Skill3, Tool1, Tool2, Framework1",
+
+  "availability": "Describe your availability and any visa/permit status.",
+
+  "target_country": "Germany",
+  "target_cities": [
+    "City1", "City2", "City3"
+  ],
+
+  "rejected_countries": [
+    "Country1", "Country2", "Country3"
+  ],
+
+  "accept_remote": true,
+
+  "primary_job_keywords": [
+    "Your Primary Job Title",
+    "Alternate Job Title",
+    "Related Role"
+  ],
+
+  "fallback_job_keywords": [
+    "Junior Role",
+    "Entry Level Role",
+    "Internship Role"
+  ],
+
+  "remote_accepted_currencies": ["USD", "EUR", "CAD", "AUD", "$", "€"],
+  "remote_reject_currencies": ["GBP", "CHF", "NOK", "SEK", "DKK", "£"],
+
+  "reject_keywords": [
+    "Senior", "Lead", "Principal", "Manager", "Head of",
+    "Director", "PhD required"
+  ],
+
+  "startup_signals": [
+    "startup", "start-up", "series a", "seed funded",
+    "venture", "vc-backed", "scale-up", "early stage"
+  ],
+
+  "language_rules": {
+    "accept": ["A1", "A2", "B1", "basic", "optional", "not required"],
+    "reject": ["C1 required", "C2 required", "native required", "fluent required"]
+  },
+
+  "max_experience_years": 5,
+  "min_score": 6,
+  "min_score_fallback": 5,
+
+  "spreadsheet_id": "YOUR_GOOGLE_SHEET_ID_HERE",
+
+  "gmail_app_password": "YOUR_GMAIL_APP_PASSWORD_HERE",
+  "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+  "telegram_chat_id": "YOUR_TELEGRAM_CHAT_ID_HERE",
+
+  "followup_after_days": 5,
+  "followup_stop_after_days": 14,
+
+  "ollama_model": "mistral:latest",
+
+  "cv": {
+    "name": "Your Full Name",
+    "subtitle": "Your Job Title / Field",
+
+    "contact": "+00 000 00000000 • your.email@example.com • linkedin.com/in/your-profile",
+    "location": "City, Country",
+
+    "summary": "Your professional summary here. Highlight your key expertise, tools, and background.",
+
+    "skillsOrdered": [
+      { "label": "Programming & Analysis", "value": "Skill1, Skill2, Skill3" },
+      { "label": "Domain Expertise", "value": "Tool1, Tool2, Framework1" },
+      { "label": "Hardware & Systems", "value": "Tool3, Tool4" },
+      { "label": "Core Expertise", "value": "Area1, Area2, Area3" }
+    ],
+
+    "topPrimarySkills": [
+      "skill1", "skill2", "skill3"
+    ],
+
+    "experience": [
+      {
+        "role": "Your Role Title",
+        "company": "Company Name",
+        "period": "Month Year – Month Year",
+        "bullets": [
+          "Key achievement or responsibility 1",
+          "Key achievement or responsibility 2",
+          "Key achievement or responsibility 3"
+        ]
+      }
+    ],
+
+    "education": [
+      {
+        "degree": "Your Degree Name",
+        "school": "University Name",
+        "period": "Year – Year"
+      }
+    ],
+
+    "langLine": "English (Fluent) | Language2 (Level) | Language3 (Level)",
+    "availLine": "Your availability statement",
+
+    "projects": [
+      {
+        "name": "Project Name",
+        "tech": "Tech1, Tech2, Tech3",
+        "bullets": [
+          "What you built/achieved",
+          "Impact or result"
+        ]
+      }
+    ],
+
+    "certs": [
+      {
+        "name": "Certification or Award Name",
+        "org": "Issuing Organization",
+        "date": "Year"
+      }
+    ],
+
+    "fullTextExtra": [
+      "Extra keywords to help AI scoring match your profile to relevant jobs"
+    ]
+  },
+
+  "scoring_rules": [
+    {
+      "score": 10, "conf": 0.97,
+      "any": ["your top job title", "alternate top title"],
+      "avoid": ["senior", "lead", "principal", "head of", "phd required"]
+    },
+    {
+      "score": 9, "conf": 0.94,
+      "any": ["second tier job title", "related role"],
+      "avoid": ["senior", "lead", "principal"]
+    },
+    {
+      "score": 8, "conf": 0.90,
+      "any": ["third tier job title", "broader role"],
+      "avoid": ["senior", "lead", "10 years"]
+    },
+    {
+      "score": 6, "conf": 0.82,
+      "any": ["junior engineer", "entry level", "graduate engineer"],
+      "avoid": []
+    },
+    {
+      "score": 0, "conf": 0.99,
+      "any": ["sales representative", "marketing manager", "unrelated role"],
+      "avoid": []
+    }
+  ],
+
+  "scoring_bonuses": [
+    { "pts": 2, "any": ["key_skill1", "key_skill2", "key_tool"] },
+    { "pts": 2, "any": ["target company1", "target company2"] },
+    { "pts": 1, "any": ["entry level", "junior", "graduate"] },
+    { "pts": 1, "any": ["target city1", "target city2", "target country"] }
+  ],
+
+  "filter_unrelated_titles": [
+    "sales", "marketing", "finance", "hr", "human resources",
+    "driver", "warehouse", "retail", "chef", "cleaning",
+    "android developer", "ios developer", "frontend developer",
+    "web developer", "social media", "content creator"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "job-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test_bot.js",
+    "bot": "node run_bot.js",
+    "dashboard": "node dashboard.js",
+    "scrape": "node scrape_jobs.js",
+    "filter": "node filter_jobs.js",
+    "ai": "node ai_process.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "bytenode": "^1.5.7",
+    "docx": "^9.6.1",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "googleapis": "^171.4.0",
+    "javascript-obfuscator": "^4.1.1",
+    "nodemailer": "^8.0.2",
+    "playwright": "^1.58.2"
+  }
+}
