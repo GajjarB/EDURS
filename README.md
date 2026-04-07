@@ -1,14 +1,14 @@
 <div align="center">
 
 ```ansi
-[38;2;217;119;87m
+
        ███████╗██████╗ ██╗   ██╗██████╗ ███████╗
        ██╔════╝██╔══██╗██║   ██║██╔══██╗██╔════╝
        █████╗  ██║  ██║██║   ██║██████╔╝███████╗
        ██╔══╝  ██║  ██║██║   ██║██╔══██╗╚════██║
        ███████╗██████╔╝╚██████╔╝██║  ██║███████║
        ╚══════╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
-[0m
+
 ```
 
 **AUTOMATED JOB BOT — PHASE 2 SECURITY EDITION**
@@ -58,15 +58,6 @@ Source .js
   → Encryption   (AES-256-GCM)
   → Stored as    .bin
 ```
-
-At runtime:
-- Password → scrypt (N=131072) → vault key → decrypt `.vault` → master keys → decrypt `.bin` → run bytecode
-- Source code is **never exposed**, even after decryption
-- Anti-debugger checks block `--inspect`, `NODE_OPTIONS` injection, live debugger attachment
-- Brute-force lockout: vault is destroyed after 5 failed attempts
-- File integrity hashes sealed inside vault to detect tampering
-
----
 
 ## Folder Structure
 
