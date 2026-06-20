@@ -11,7 +11,7 @@
 
 ```
 
-**AUTOMATED JOB BOT — PHASE 2 SECURITY EDITION**
+**AUTOMATED JOB BOT - PHASE 2 SECURITY EDITION**
 
 Developed by **[BHARGAV VADGAMA](https://github.com/GajjarB)**
 
