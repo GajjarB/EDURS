@@ -16,7 +16,7 @@ Developed by **[BHARGAV VADGAMA](https://github.com/GajjarB)**
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=nodedotjs)
 ![Security](https://img.shields.io/badge/Security-AES--256--GCM-red?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-Private-lightgrey?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 </div>
 

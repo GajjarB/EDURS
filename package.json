@@ -2,12 +2,15 @@
   "name": "edurs-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "EDURS Automated Job Bot - runtime distribution",
+  "description": "EDURS - encrypted, cross-platform automation pipeline (runtime distribution)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.13.6",
     "exceljs": "^4.4.0",
