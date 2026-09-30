@@ -1,4 +1,4 @@
-﻿# Keep the macOS/Linux launcher LF-only - CRLF breaks the shebang.
+# Keep the macOS/Linux launcher LF-only - CRLF breaks the shebang.
 *.sh    text eol=lf
 *.bat   text eol=crlf
 *.bin   binary
