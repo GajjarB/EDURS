@@ -1,4 +1,4 @@
-# Runtime secrets — NEVER commit these
+# Runtime secrets - NEVER commit these
 .vault
 .env
 .attempts
@@ -7,10 +7,10 @@
 bot_execution.log
 *.log
 
-# CV / personal documents — user must add their own
+# CV / personal documents - user must add their own
 *.pdf
 
-# Dependencies — install via npm install
+# Dependencies - install via npm install
 node_modules/
 package-lock.json
 

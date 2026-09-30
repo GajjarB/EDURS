@@ -17,8 +17,8 @@ where node >nul 2>&1
 if errorlevel 1 (
     echo [ERROR] Node.js is not installed or not in PATH.
     echo.
-    echo This bot requires Node.js v25.x ^(exact version^).
-    echo Download from: https://nodejs.org/en/download/releases
+    echo This bot requires Node.js v16 or newer ^(any OS^).
+    echo Download from: https://nodejs.org/en/download
     echo.
     pause
     exit /b 1
@@ -27,7 +27,7 @@ if errorlevel 1 (
 REM ── Show Node.js version ─────────────────────────────────────────────────
 for /f "tokens=*" %%v in ('node --version') do set NODE_VER=%%v
 echo [INFO] Node.js version: %NODE_VER%
-echo [INFO] Required:        v25.x  ^(must match compiled version^)
+echo [INFO] Required:        v16 or newer  ^(cross-platform^)
 echo.
 
 REM ── Install / verify npm dependencies ───────────────────────────────────
