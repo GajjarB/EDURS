@@ -213,6 +213,22 @@ You only need to share the `EDURS/` folder. The recipient must:
 
 ---
 
+## Disclaimer
+
+This project is provided **for educational and research purposes only**.
+
+It is shared to demonstrate automation, encryption, and secure-distribution techniques. It is the end user's sole responsibility to use it lawfully and in compliance with the terms of service, `robots.txt`, rate limits, and privacy/anti-spam laws of any website, email provider, or third-party service it interacts with.
+
+The author does **not** endorse or take responsibility for any misuse. By downloading, configuring, or running this software you agree that:
+
+- You use it entirely **at your own risk**.
+- **You** - not the author - are responsible for how you operate it and for any data you collect, store, or send with it.
+- The author is **not liable** for any damage, data loss, account suspension, legal consequence, or other harm arising from your use or misuse of this software.
+
+This software is distributed under the MIT License, which already includes a "no warranty" and "no liability" clause (see `LICENSE`). This disclaimer is in addition to, and does not limit, that notice.
+
+---
+
 <div align="center">
 
 **Developed by [BHARGAV VADGAMA](https://github.com/GajjarB)**
