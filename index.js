@@ -21,7 +21,16 @@ const fs     = require('fs');
 const path   = require('path');
 const Module = require('module');
 
-const VAULT_FILE    = path.join(__dirname, '.vault');
+// Accept the vault under a few names. ".vault" is canonical, but a dotfile is
+// easy to misplace on macOS/Windows, so we also accept "EDURS.vault" / "vault"
+// exactly as shared, with no rename required.
+const VAULT_FILE = (function resolveVault() {
+    for (const name of ['.vault', 'EDURS.vault', 'vault']) {
+        const p = path.join(__dirname, name);
+        try { fs.accessSync(p); return p; } catch (_) {}
+    }
+    return path.join(__dirname, '.vault'); // default; drives the "missing" message
+})();
 const ATTEMPTS_FILE = path.join(__dirname, '.attempts');
 const ENTRY_BIN     = path.join(__dirname, 'bot_entry.bin');
 const ENTRY_NAME    = path.join(__dirname, 'bot_entry.js'); // virtual filename for the module
